@@ -1,0 +1,24 @@
+---
+layout: full
+---
+<h1>The Kirks Lego Sets</h1>
+
+<section>
+    <h2>All Sets</h2>
+    <div class="list-grid  list-grid--basis-20  list-grid--gutter-small">
+        {% for set in site.lego %}
+        <div class="list-grid__item  card-wrap">
+            <article class="card">
+                <div class="card__image">
+                    <img src="{{ set.image }}" alt="" />
+                </div>
+                <div class="card__body">
+                    <p>
+                        {{ set.title }}
+                    </p>
+                </div>
+            </article>
+        </div>
+        {% endfor %}
+    </div>
+</section>

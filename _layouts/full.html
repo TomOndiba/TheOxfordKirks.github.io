@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Andy Kirk">
+	
+	<!-- Chrome 29+, Opera 16+, Safari 6.1+, iOS 7+, Android ~4.4+, IE 10+ (including Edge) -->
+    <!-- FF 29+ -->
+    <link rel="stylesheet" href="/css/style.min.css"
+        media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none),only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)"
+    >
+     
+</head>
+<body role="document"{% if page.body_id %} class="{{ page.body_id }}"{% endif %}>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" display="none">
+        <symbol id="icon-triangle-down" viewBox="0 0 12 16">
+            <path d="M1,6h10l-5,5L1,6z"></path>
+        </symbol>
+        <symbol id="icon-cross" viewBox="0 0 16 16">
+            <path d="M15.5,2L14,0.5l-6,6l-6-6L0.5,2l6,6l-6,6L2,15.5l6-6l6,6l1.5-1.5l-6-6L15.5,2z"></path>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 16 16">
+            <rect x="0" width="16" height="3"/>
+            <rect x="0" y="6" width="16" height="3"/>
+            <rect y="12" width="16" height="3"/>
+        </symbol>
+        <!-- Other <symbol>s? -->
+    </svg>
+
+    <div class="no-style-notice  no-css-only">
+        <hr />
+        <p>
+            <b>Notice:</b> You are viewing an <em>unstyled</em> version of this page. Are you using a very old browser? If so, <a href="http://browsehappy.com/">please consider upgrading</a>.
+        </p>
+        <hr />
+    </div>
+
+    <div class="sticky-footer-wrap">           
+        <header class="header">
+        
+            <div class="over-panel  over-panel--slide" id="nav">
+                <a href="#" tabindex="-1" class="over-panel__overlay  js-no-history"></a>
+
+                <div class="nav-bar">
+                    <div class="nav-bar__title-section">
+
+                        <div class="nav-bar__title-text"><a href="/" class="nav-bar__link">Andy Kirk</a></div>
+                        <!--
+                        <a href="#nav" class="over-panel__open  js-no-history" hidden><svg display="none" class="icon" aria-label="Open menu"><use xlink:href="#icon-menu"></use></svg></a>
+                        -->
+                    </div>
+                    <!-- Nav was here - see blog as/whem -->
+                    
+                </div>
+            </div>
+        </header>
+        
+        <div class="sticky-footer-expand">
+            <main role="main" class="main-container">
+                {{ content }}
+            </main>
+        </div>
+        
+        <footer class="sticky-footer" role="contentinfo">
+            <p class="page-footer">
+                <a href="#">Top</a> | <a href="https://github.com/TheOxfordKirks/TheOxfordKirks.github.io">Github</a> | &copy; Andy Kirk 2016
+            </p>
+        </footer>
+    </div>
+
+
+    <script src="/js/script.min.js"></script>
+    
+</body>
+</html>

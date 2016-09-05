@@ -1,0 +1,39 @@
+# Site settings
+title: "TheOxfordKirks"
+email: andy.kirk@gridlight-design.co.uk
+description: "Lego sets we have."
+repository: "TheOxfordKirks/TheOxfordKirks.github.io"
+baseurl: ""
+url: "https://github.com/TheOxfordKirks/TheOxfordKirks.github.io"
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      body_id: false
+  -
+    scope:
+      path: ""
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      thumb: ""
+      role: ""
+
+collections:
+  - lego
+      
+# Build settings
+markdown: kramdown
+#permalink: /:year/:month/:title/
+permalink: /:categories/:title/
+
+kramdown:
+  auto_ids:       true
+
+
+
+exclude: ["node_modules", "bower_components", "Gemfile", "Gemfile.lock", "Gruntfile.js", "bower.json", "package.json", "README.md"]
