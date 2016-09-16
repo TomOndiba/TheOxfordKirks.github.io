@@ -9,13 +9,13 @@ layout: full
         {% for set in site.lego %}
         <div class="list-grid__item  card-wrap">
             <article class="card">
+                <div class="card__body">
+                    <h2>
+                        {{ set.title }}
+                    </h2>
+                </div>
                 <div class="card__image">
                     <img src="http://res.cloudinary.com/andykirk/image/upload/w_200/v1473087059/lego/{{ set.image }}" alt="" />
-                </div>
-                <div class="card__body">
-                    <p>
-                        {{ set.title }}
-                    </p>
                 </div>
             </article>
         </div>
